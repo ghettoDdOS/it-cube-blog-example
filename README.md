@@ -14,9 +14,10 @@
 10. python manage.py migrate
 11. python manage.py createsuperuser
 12. python manage.py runserver
-13. git init
-14. git remote add origin <REPOSITORY_LINK>
-15. git add .
-16. git commit -m"Commit message"
-17. git push origin master
+13. pip freeze > req.txt
+14. git init
+15. git remote add origin <REPOSITORY_LINK>
+16. git add .
+17. git commit -m"Commit message"
+18. git push origin master
 ```
