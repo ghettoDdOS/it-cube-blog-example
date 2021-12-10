@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1><a href="{% url 'news-list' %}">К списку новостей</a></h1>
+<h1>{{ object.title }}</h1>
+<p>{{ object.text }}</p>
+<img src="{{object.preview.url}}">
+<p>Дата публикации: {{ object.date_of_publication|date }}</p>
+{% endblock content %}

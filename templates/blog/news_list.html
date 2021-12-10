@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Новости</h1>
+<ul>
+{% for news in object_list %}
+    <li><a href="{% url 'news-detail' news.pk %}">{{ news.date_of_publication|date }} - {{ news.title }}</a></li>
+{% empty %}
+    <li>Новости отсутствуют</li>
+{% endfor %}
+</ul>
+{% endblock content %}
